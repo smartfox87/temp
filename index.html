@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem beatae corporis, dolores ducimus facere hic impedit inventore laboriosam nam non nulla quaerat quia quos repellendus soluta ut vero.</p>
+    <form class="order" action="" method="post">
+      <div class="order__wrapper">
+        <div class="order__column  order__column--left">
+          <span class="order__cell"></span>
+          <span class="order__cell">Название</span>
+          <span class="order__cell">Статус</span>
+          <span class="order__cell">Сумма</span>
+          <span class="order__cell  order__cell--big">Описание для анонса</span>
+        </div>
+
+        <div class="order__column">
+          <span class="order__cell order__cell--caption">Транзакция 1</span>
+          <label class="order__cell">
+            <input type="text" name="name1">
+          </label>
+          <label class="order__cell">
+            <select name="status1">
+              <option value="done">Совершена</option>
+              <option value="scheduled">Планируется</option>
+              <option value="canceled">Отменена</option>
+            </select>
+          </label>
+          <label class="order__cell">
+            <input type="text" name="sum1">
+          </label>
+          <label class="order__cell  order__cell--big">
+            <textarea name="description1"></textarea>
+          </label>
+        </div>
+
+        <div class="order__column">
+          <span class="order__cell order__cell--caption">Транзакция 2</span>
+          <label class="order__cell">
+            <input type="text" name="name2">
+          </label>
+          <label class="order__cell">
+            <select name="status2">
+              <option value="done">Совершена</option>
+              <option value="scheduled">Планируется</option>
+              <option value="canceled">Отменена</option>
+            </select>
+          </label>
+          <label class="order__cell">
+            <input type="text" name="sum2">
+          </label>
+          <label class="order__cell  order__cell--big">
+            <textarea name="description2"></textarea>
+          </label>
+        </div>
+
+        <div class="order__column">
+          <span class="order__cell order__cell--caption">Транзакция 3</span>
+          <label class="order__cell">
+            <input type="text" name="name3">
+          </label>
+          <label class="order__cell">
+            <select name="status3">
+              <option value="done">Совершена</option>
+              <option value="scheduled">Планируется</option>
+              <option value="canceled">Отменена</option>
+            </select>
+          </label>
+          <label class="order__cell">
+            <input type="text" name="sum3">
+          </label>
+          <label class="order__cell  order__cell--big">
+            <textarea name="description3"></textarea>
+          </label>
+        </div>
+
+        <div class="order__column">
+          <span class="order__cell order__cell--caption">Транзакция 4</span>
+          <label class="order__cell">
+            <input type="text" name="name4">
+          </label>
+          <label class="order__cell">
+            <select name="status4">
+              <option value="done">Совершена</option>
+              <option value="scheduled">Планируется</option>
+              <option value="canceled">Отменена</option>
+            </select>
+          </label>
+          <label class="order__cell">
+            <input type="text" name="sum4">
+          </label>
+          <label class="order__cell  order__cell--big">
+            <textarea name="description4"></textarea>
+          </label>
+        </div>
+
+        <div class="order__column">
+          <span class="order__cell order__cell--caption">Транзакция 5</span>
+          <label class="order__cell">
+            <input type="text" name="name5">
+          </label>
+          <label class="order__cell">
+            <select name="status5">
+              <option value="done">Совершена</option>
+              <option value="scheduled">Планируется</option>
+              <option value="canceled">Отменена</option>
+            </select>
+          </label>
+          <label class="order__cell">
+            <input type="text" name="sum5">
+          </label>
+          <label class="order__cell  order__cell--big">
+            <textarea name="description5"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <button class="order__btn" id="save" type="submit">Сохранить</button>
+      <button class="order__btn" id="cancel" type="submit">Отменить</button>
+    </form>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>

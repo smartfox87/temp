@@ -1,71 +1,105 @@
-.order {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px;
+.ns-form {
+    padding: 50px 0 0 300px;
     font-family: Arial sans-serif;
     font-size: 12px;
     line-height: 16px;
 }
 
-.order__wrapper {
-    padding-left: 300px;
+.ns-form__wrapper {
     display: flex;
     margin-bottom: 20px;
-    overflow: auto;
 }
 
-.order__column {
+.ns-form__column {
     display: flex;
     flex-direction: column;
     width: 300px;
     flex-shrink: 0;
 }
 
-.order__column--left {
+.ns-form__column--left {
     position: absolute;
-    left: 11px;
-    top: 11px;
-    background: #ffffff;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: #187baf;
+    color: #ffffff;
     font-size: 16px;
-    font-weight: 700;
 }
 
-.order__cell {
-    margin-left: -1px;
-    margin-top: -1px;
+.ns-form__cell {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
-    height: 48px;
-    border: 1px solid #000000;
+    height: 50px;
+    outline: 1px solid #444444;
 }
 
-.order__cell--big {
-    height: 250px;
+.ns-form__cell--required {
+    font-weight: 700;
+    font-style: italic;
 }
 
-.order__cell--caption {
+.ns-form__cell--big {
+    height: 125px;
+}
+
+.ns-form__cell--caption {
+    position: absolute;
+    top: 0;
     margin-top: 0;
+    width: 300px;
+    justify-content: center;
+    background: #187baf;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    justify-content: center;
 }
 
-.order__cell input,
-.order__cell select,
-.order__cell textarea {
-    height: 100%;
+.ns-form__link-select {
+    font-size: 14px;
+    line-height: 18px;
+    color: #187baf;
+}
+
+.ns-form__cell input,
+.ns-form__cell select,
+.ns-form__cell textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 5px;
 }
 
-.order__btn {
-    margin-right: 20px;
-    padding: 10px 20px;
+.ns-form__cell textarea {
+    height: 100%;
+}
+
+.ns-form__buttons {
+    z-index: 20;
+    position: absolute;
+    left: 20px;
+    padding: 10px;
+    width: 265px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.ns-form__prompt {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.ns-form__btn {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100px;
     display: inline-block;
     font-weight: 700;
     outline: none;
-    border: 1px solid #000000;
+    border: 1px solid #555555;
 }

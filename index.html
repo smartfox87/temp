@@ -7,120 +7,348 @@
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto autem beatae corporis, dolores ducimus facere hic impedit inventore laboriosam nam non nulla quaerat quia quos repellendus soluta ut vero.</p>
-    <form class="order" action="" method="post">
-      <div class="order__wrapper">
-        <div class="order__column  order__column--left">
-          <span class="order__cell"></span>
-          <span class="order__cell">Название</span>
-          <span class="order__cell">Статус</span>
-          <span class="order__cell">Сумма</span>
-          <span class="order__cell  order__cell--big">Описание для анонса</span>
+    <form class="ns-form" action="" method="post">
+      <div class="ns-form__wrapper">
+        <div class="ns-form__column  ns-form__column--left">
+          <span class="ns-form__cell"></span>
+          <span class="ns-form__cell  ns-form__cell--required">Название *</span>
+          <span class="ns-form__cell  ns-form__cell--required">Статус *</span>
+          <span class="ns-form__cell  ns-form__cell--required">Дата *</span>
+          <span class="ns-form__cell  ns-form__cell--required">Статья *</span>
+          <span class="ns-form__cell">Сумма</span>
+          <span class="ns-form__cell">Сумма в USD</span>
+          <span class="ns-form__cell  ns-form__cell--required">Банковский счет юр. лица *</span>
+          <span class="ns-form__cell">Договор</span>
+          <span class="ns-form__cell">Сотрудник</span>
+          <span class="ns-form__cell  ns-form__cell--big">Описание для анонса</span>
+          <span class="ns-form__cell">Сумма ЗП по внутреннему курсу</span>
+          <span class="ns-form__cell">Перемещение на счет</span>
+          <span class="ns-form__cell">Курс $</span>
+          <span class="ns-form__cell">ID курса</span>
+          <span class="ns-form__cell">Связь с версией</span>
+          <span class="ns-form__cell">Отсрочка отн. даты завершения версии</span>
         </div>
 
-        <div class="order__column">
-          <span class="order__cell order__cell--caption">Транзакция 1</span>
-          <label class="order__cell">
-            <input type="text" name="name1">
+        <div class="ns-form__column">
+          <span class="ns-form__cell ns-form__cell--caption">Транзакция 1</span>
+          <label class="ns-form__cell">
+            <input type="text" name="name__1">
           </label>
-          <label class="order__cell">
-            <select name="status1">
+          <label class="ns-form__cell">
+            <select name="status__1">
               <option value="done">Совершена</option>
               <option value="scheduled">Планируется</option>
               <option value="canceled">Отменена</option>
             </select>
           </label>
-          <label class="order__cell">
-            <input type="text" name="sum1">
+          <label class="ns-form__cell">
+            <input type="text" name="date__1">
           </label>
-          <label class="order__cell  order__cell--big">
-            <textarea name="description1"></textarea>
+          <label class="ns-form__cell">
+            <input type="text" name="article__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum__1">
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum-usd__1">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="bank-acount__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="contract__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="worker__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell  ns-form__cell--big">
+            <textarea name="description_1"></textarea>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="salary__1">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="transfer__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="rate-usd__1">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="id-rate__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="connect-version__1">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="delay__1">
           </label>
         </div>
 
-        <div class="order__column">
-          <span class="order__cell order__cell--caption">Транзакция 2</span>
-          <label class="order__cell">
-            <input type="text" name="name2">
+        <div class="ns-form__column">
+          <span class="ns-form__cell ns-form__cell--caption">Транзакция 2</span>
+          <label class="ns-form__cell">
+            <input type="text" name="name__2">
           </label>
-          <label class="order__cell">
-            <select name="status2">
+          <label class="ns-form__cell">
+            <select name="status__2">
               <option value="done">Совершена</option>
               <option value="scheduled">Планируется</option>
               <option value="canceled">Отменена</option>
             </select>
           </label>
-          <label class="order__cell">
-            <input type="text" name="sum2">
+          <label class="ns-form__cell">
+            <input type="text" name="date__2">
           </label>
-          <label class="order__cell  order__cell--big">
-            <textarea name="description2"></textarea>
+          <label class="ns-form__cell">
+            <input type="text" name="article__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum__2">
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum-usd__2">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="bank-acount__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="contract__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="worker__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell  ns-form__cell--big">
+            <textarea name="description_2"></textarea>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="salary__2">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="transfer__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="rate-usd__2">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="id-rate__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="connect-version__2">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="delay__2">
           </label>
         </div>
 
-        <div class="order__column">
-          <span class="order__cell order__cell--caption">Транзакция 3</span>
-          <label class="order__cell">
-            <input type="text" name="name3">
+        <div class="ns-form__column">
+          <span class="ns-form__cell ns-form__cell--caption">Транзакция 3</span>
+          <label class="ns-form__cell">
+            <input type="text" name="name__3">
           </label>
-          <label class="order__cell">
-            <select name="status3">
+          <label class="ns-form__cell">
+            <select name="status__3">
               <option value="done">Совершена</option>
               <option value="scheduled">Планируется</option>
               <option value="canceled">Отменена</option>
             </select>
           </label>
-          <label class="order__cell">
-            <input type="text" name="sum3">
+          <label class="ns-form__cell">
+            <input type="text" name="date__3">
           </label>
-          <label class="order__cell  order__cell--big">
-            <textarea name="description3"></textarea>
+          <label class="ns-form__cell">
+            <input type="text" name="article__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum__3">
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum-usd__3">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="bank-acount__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="contract__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="worker__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell  ns-form__cell--big">
+            <textarea name="description_3"></textarea>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="salary__3">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="transfer__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="rate-usd__3">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="id-rate__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="connect-version__3">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="delay__3">
           </label>
         </div>
 
-        <div class="order__column">
-          <span class="order__cell order__cell--caption">Транзакция 4</span>
-          <label class="order__cell">
-            <input type="text" name="name4">
+        <div class="ns-form__column">
+          <span class="ns-form__cell ns-form__cell--caption">Транзакция 4</span>
+          <label class="ns-form__cell">
+            <input type="text" name="name__4">
           </label>
-          <label class="order__cell">
-            <select name="status4">
+          <label class="ns-form__cell">
+            <select name="status__4">
               <option value="done">Совершена</option>
               <option value="scheduled">Планируется</option>
               <option value="canceled">Отменена</option>
             </select>
           </label>
-          <label class="order__cell">
-            <input type="text" name="sum4">
+          <label class="ns-form__cell">
+            <input type="text" name="date__4">
           </label>
-          <label class="order__cell  order__cell--big">
-            <textarea name="description4"></textarea>
+          <label class="ns-form__cell">
+            <input type="text" name="article__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum__4">
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum-usd__4">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="bank-acount__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="contract__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="worker__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell  ns-form__cell--big">
+            <textarea name="description_4"></textarea>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="salary__4">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="transfer__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="rate-usd__4">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="id-rate__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="connect-version__4">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="delay__4">
           </label>
         </div>
 
-        <div class="order__column">
-          <span class="order__cell order__cell--caption">Транзакция 5</span>
-          <label class="order__cell">
-            <input type="text" name="name5">
+        <div class="ns-form__column">
+          <span class="ns-form__cell ns-form__cell--caption">Транзакция 5</span>
+          <label class="ns-form__cell">
+            <input type="text" name="name__5">
           </label>
-          <label class="order__cell">
-            <select name="status5">
+          <label class="ns-form__cell">
+            <select name="status__5">
               <option value="done">Совершена</option>
               <option value="scheduled">Планируется</option>
               <option value="canceled">Отменена</option>
             </select>
           </label>
-          <label class="order__cell">
-            <input type="text" name="sum5">
+          <label class="ns-form__cell">
+            <input type="text" name="date__5">
           </label>
-          <label class="order__cell  order__cell--big">
-            <textarea name="description5"></textarea>
+          <label class="ns-form__cell">
+            <input type="text" name="article__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum__5">
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="sum-usd__5">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="bank-acount__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="contract__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="worker__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell  ns-form__cell--big">
+            <textarea name="description_5"></textarea>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="salary__5">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="transfer__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="rate-usd__5">
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="id-rate__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="text" name="connect-version__5">
+            <a class="ns-form__link-select" href="#">Выбрать из списка</a>
+          </label>
+          <label class="ns-form__cell">
+            <input type="number" name="delay__5">
           </label>
         </div>
       </div>
-
-      <button class="order__btn" id="save" type="submit">Сохранить</button>
-      <button class="order__btn" id="cancel" type="submit">Отменить</button>
+      <div class="ns-form__buttons">
+        <p class="ns-form__prompt">Поля обязательные для заполнения *</p>
+        <button class="ns-form__btn" id="save" type="submit">Сохранить</button>
+        <button class="ns-form__btn" id="cancel" type="submit">Отменить</button>
+      </div>
     </form>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src="js/script.js"></script>

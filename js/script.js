@@ -19,6 +19,7 @@ $(window).on("load", function () {
     var scrollingLeft = ($(document).scrollLeft() > 0) ? true : false;
     if (scrollingTop) {
       $(".ns-form__buttons").css({bottom: 20 - $(document).scrollTop()});
+      $(".ns-form__column--left").css({top: -$(document).scrollTop()})
     }
 
     if (scrollingLeft) {
@@ -27,8 +28,6 @@ $(window).on("load", function () {
         var left = $(this).outerWidth() * (index + 1) - $(document).scrollLeft();
         $(this).css({left: left});
       });
-    } else {
-      $(".ns-form__cell--caption").css({position: "fixed"})
     }
   });
 });
